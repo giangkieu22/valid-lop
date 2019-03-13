@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validtenlop</title>
+</head>
+<body>
+<script>
+    let valid;
+    function validLop(str) {
+        valid = /^[CAP][0-9]{4}[GHIKLM]$/;
+        if (valid.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let x = prompt('Điền tên lớp!');
+    alert(validLop(x));
+</script>
+</body>
+</html>
